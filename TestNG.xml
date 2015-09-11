@@ -1,14 +1,14 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Parallel test runs" parallel="tests" thread-count="2">
  
-<test name="T_01">
+<test name="Run on Firefox">
     <parameter name="browser" value="firefox"/>
     <classes>
         <class name="com.gspann.grid.TestClass" ></class>
     </classes>
 </test>
  
-<test name="T_02">
+<test name="Run on chrome">
     <parameter name="browser" value="chrome"/>
     <classes>
         <class name="com.gspann.grid.TestClass" ></class>
